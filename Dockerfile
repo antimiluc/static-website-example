@@ -2,7 +2,7 @@ FROM ubuntu
 LABEL maintainer='ANTIMI LUC'
 RUN apt-get update
 RUN  apt-get install -y nginx
-ADD static-website-example/ /var/www/html/
+ADD ./webapprout /var/www/html/
 #EXPOSE 80
 
 RUN adduser -D myuser
