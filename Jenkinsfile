@@ -27,16 +27,16 @@ pipeline {
                }
             }
        }
-       stage('Test image') {
-           agent any
-           steps {
-              script {
-                sh '''
-                    curl http://172.17.0.1:80 | grep -q "Dimension"
-                '''
-              }
-           }
-      }
+       //stage('Test image') {
+       //    agent any
+       //    steps {
+       //       script {
+       //        sh '''
+       //             curl http://172.17.0.1:80 | grep -q "Dimension"
+       //         '''
+       //       }
+       //    }
+      //}
       stage('Clean Container') {
           agent any
           steps {
