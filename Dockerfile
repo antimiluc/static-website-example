@@ -1,2 +1,2 @@
 FROM nginx
-COPY ./static-website-example/webapprout /usr/share/nginx/html
+COPY ./webapprout /usr/share/nginx/html
